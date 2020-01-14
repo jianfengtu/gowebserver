@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5(html): table表格 合并单元格</title>
+    <style type="text/css">
+        table { border-collapse: collapse; }
+        table, tr, th, td { border: solid 1px red; }
+        #testTable th, #testTable td { padding: 10px; }
+    </style>
+</head>
+
+<body>
+    <table id="testTable">
+        <thead>
+            <tr>
+                <th rowspan="2">合并行标题</th>
+                <th colspan="2">合并列标题</th>
+            </tr>
+            <tr>
+                <th>标题2-2</th>
+                <th>标题2-3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">合并列内容</td col>
+            </tr>
+            <tr>
+                <td rowspan="2">合并行内容</td>
+                <td>内容2-2</td>
+                <td>内容2-3</td>
+            </tr>
+            <tr>
+                <td>内容3-2</td>
+                <td>内容3-3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
